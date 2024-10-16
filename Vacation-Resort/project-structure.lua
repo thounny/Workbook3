@@ -1,0 +1,12 @@
+|-- index.html
+|-- overnight-estimator.html
+|-- dining.html
+|-- rental.html
+|-- activities.html
+|-- css/
+    |-- styles.css
+|-- js/
+    |-- main.js
+|-- images/
+    |-- resort.jpg
+    |-- restaurant.jpg

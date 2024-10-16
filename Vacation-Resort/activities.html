@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activities</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="window" style="width: 80%">
+      <div class="title-bar">
+        <div class="title-bar-text">Activities</div>
+      </div>
+      <div class="window-body">
+        <label for="activityTypesSelect">Select Activity Category:</label>
+        <!-- Dropdown without the 'size' attribute -->
+        <select id="activityTypesSelect" onchange="showActivities()">
+          <option value="arts">Arts/Crafts</option>
+          <option value="adventure">Adventure</option>
+          <option value="museums">Museums/Culture</option>
+        </select>
+
+        <div id="arts" style="display: none">
+          <h3>Arts & Crafts</h3>
+          <p>Candle Making - $7.99</p>
+        </div>
+        <div id="adventure" style="display: none">
+          <h3>Adventure</h3>
+          <p>Ziplining the Canyon - $119.99</p>
+        </div>
+        <div id="museums" style="display: none">
+          <h3>Museums & Culture</h3>
+          <p>Amazing Science - $9.99</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showActivities() {
+        const select = document.getElementById("activityTypesSelect").value;
+        document.getElementById("arts").style.display =
+          select === "arts" ? "block" : "none";
+        document.getElementById("adventure").style.display =
+          select === "adventure" ? "block" : "none";
+        document.getElementById("museums").style.display =
+          select === "museums" ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>

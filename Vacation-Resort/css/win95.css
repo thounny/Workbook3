@@ -1,0 +1,281 @@
+/* 
+
+    WIN95.CSS
+    https://github.com/AlexBSoft/win95.css
+    Author: Alex B (alex-b.me)
+    License: MIT
+
+    Version: 1.2.0
+    06.12.2020
+
+*/
+
+/* ============================================================
+   Global Styles
+   ============================================================ */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: "MS Sans Serif", Tahoma, Verdana, Segoe, sans-serif;
+  background: teal;
+  color: white;
+  padding-bottom: 28px;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* ============================================================
+   Background & Links
+   ============================================================ */
+.bg-cloud {
+  background-image: url(clouds2.jpg);
+  color: #212529;
+}
+
+a {
+  color: #2d49eb;
+}
+
+/* ============================================================
+   Header
+   ============================================================ */
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* ============================================================
+   Scrollbar Styling (Only for Chrome and Safari)
+   ============================================================ */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Additional scrollbar styles */
+::-webkit-scrollbar-thumb:vertical {
+  border: 1px outset #fff;
+  box-shadow: 1px 1px #000;
+  background-color: silver;
+}
+
+::-webkit-scrollbar-track {
+  background-image: url(background.bmp);
+}
+
+/* ============================================================
+   Button Styles
+   ============================================================ */
+.btn {
+  border: 2px outset buttonface;
+  border-right-color: #424242;
+  border-bottom-color: #424242;
+  background: silver;
+  color: black;
+  padding: 0 0 4px;
+  border-radius: 1px;
+}
+
+.btn:hover {
+  border: 2px inset #fff;
+  color: #424242;
+}
+
+.btn:focus,
+.btn:active {
+  border: 2px inset #fff;
+  background: silver;
+  color: #424242;
+}
+
+/* Disabled button styling */
+.btn.disabled,
+.btn:disabled {
+  cursor: default;
+  background-color: silver;
+  color: grey;
+}
+
+/* ============================================================
+   Card Component Styling
+   ============================================================ */
+.card {
+  border: 2px solid;
+  border-color: #fff #424242 #424242 #fff;
+  background: silver;
+  color: #212529;
+}
+
+.card-header {
+  background: linear-gradient(to left, #08216b, #a5cef7);
+  color: #fff;
+  text-align: left;
+  padding: 2px;
+  overflow: hidden;
+}
+
+/* ============================================================
+   List Groups
+   ============================================================ */
+.list-group {
+  border: 2px solid;
+  border-color: #fff #424242 #424242 #fff;
+  background: silver;
+}
+
+.list-group-item {
+  background: transparent;
+  color: #212529;
+}
+
+.list-group-item-primary {
+  background: linear-gradient(to left, #08216b, #a5cef7);
+  color: white;
+}
+
+/* ============================================================
+   Navbar
+   ============================================================ */
+.navbar-95 {
+  background: silver;
+  margin: 0;
+  border: 1px outset #fff;
+  min-height: 40px;
+  padding: 0 6px;
+  color: #212529;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #212529;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+  background: url(icons/directory_closed_cool-5.png);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background: url(icons/directory_open_cool-5.png);
+}
+
+/* ============================================================
+   Footer (Taskbar)
+   ============================================================ */
+.taskbar {
+  background-color: silver;
+  border-top: 2px outset #fff;
+  z-index: 228;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.taskbar .start-button {
+  border: 1px outset #fff;
+  box-shadow: 1px 1px #000;
+  padding: 0 2px;
+}
+
+.taskbar .time {
+  color: #212529;
+  text-align: right;
+  font-size: 14px;
+}
+
+/* ============================================================
+   Forms
+   ============================================================ */
+.form-95 {
+  width: 100%;
+  border: 2px inset #d5d5d5;
+  color: #424242;
+  background: #fff;
+  margin-top: 4px;
+  padding-left: 2px;
+  box-shadow: -1px -1px 0 0 #828282;
+}
+
+/* ============================================================
+   Progress Bar
+   ============================================================ */
+.progress {
+  background-color: silver;
+  border-radius: 0;
+  border: 1px inset #d5d5d5;
+}
+
+.progress-bar {
+  background-color: #1a0094;
+}
+
+/* ============================================================
+   Tabs
+   ============================================================ */
+.nav-tabs .nav-item {
+  background: #c0c0c0;
+  border-right: 1px solid #5a5a5a;
+}
+
+.nav-tabs .nav-link.active {
+  background: #c0c0c0;
+}
+
+/* ============================================================
+   Modal
+   ============================================================ */
+.modal-content {
+  box-shadow: 1px 1px 0 0 #424242;
+  border: 1px solid #fff;
+  background: silver;
+}
+
+.modal-header {
+  background: linear-gradient(to left, #08216b, #a5cef7) !important;
+  color: white;
+}
+
+/* ============================================================
+   Tables
+   ============================================================ */
+.table {
+  background: white;
+  border-color: #c0c0c0;
+}
+
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #c0c0c0;
+}
+
+/* ============================================================
+   Icon Sizing
+   ============================================================ */
+.icon-16 {
+  max-height: 16px;
+}
+
+.icon-16-4 {
+  max-height: 16px;
+  margin-bottom: 4px;
+}
