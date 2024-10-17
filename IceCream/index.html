@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice Cream</title>
+</head>
+
+<body>
+    <label>
+        <input type="number" value="1" id="scoops" />
+    </label>
+    <label> <input type="radio" name="container" id="cup" checked />Cup </label>
+    <label> <input type="radio" name="container" id="cone" />Cone </label>
+    <fieldset id="toppings">
+        <legend>Toppings</legend>
+        <label>
+            <input type="checkbox" id="sprinkles" />Sprinkles ($0.50)
+            <label>
+            </label>
+            <input type="checkbox" id="whipped" />Whipped Cream ($0.25)
+        </label>
+        <label>
+            <input type="checkbox" id="fudge" />Hot Fudge ($1.25)
+        </label>
+        <label>
+            <input type="checkbox" id="cherry" />Cherry ($0.25)
+        </label>
+    </fieldset>
+    <button id="submitOrder">Submit Order</button>
+    <pre id="outputReceipt"></pre>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
